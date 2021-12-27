@@ -1,0 +1,97 @@
+body{
+    background-color: #000;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.top-content{
+    margin:  0 auto; 
+}
+.me-img{
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    width: 150px;
+    height: 150px;
+    
+}
+.middle-content{
+    width: 100%;
+    margin: 10vh auto 0 auto;
+}
+.heading1{
+    color: #D69F00;
+    font-weight: 100;
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5vh;
+}
+.lower-content{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.l-side{
+    text-align: left;
+    width: 62%;
+}
+.l-side input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 2vh;
+}
+.sub-email{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #D69F00;
+    font-size: 10px;
+
+}
+.r-side{
+    text-align: right;
+    width: 32%;
+}
+.bottom, .top button{
+    width: 100%;
+}
+.top button{
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1vh;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+#home-link-active{
+    color: #ffbf00;
+    font-weight: 550;
+}
+.nav-line{
+    width: 60%;
+    margin: auto;
+    color: #111129;
+}
+
+

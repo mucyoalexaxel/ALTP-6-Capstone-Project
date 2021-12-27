@@ -1,0 +1,17 @@
+@import url('header_footer.css');
+@import url('Landing_Page.css');
+@import url('blog.css');
+@import url('icons.css');
+@import url('hire_me.css');
+@import url('login.css');
+@import url('about.css');
+@import url('contact.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #000; */
+}

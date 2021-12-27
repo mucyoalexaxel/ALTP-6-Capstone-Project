@@ -1,0 +1,19 @@
+.icons{
+    display: flex;
+    
+}
+.icons li{
+    list-style: none;
+}
+.icon{
+    margin-left: .6vw;
+}
+.foot-icon{
+   margin-left: 2vw;
+}
+.foot-icon img{
+    width: 25px;
+}
+.icon img{
+    width: 30px;
+}
