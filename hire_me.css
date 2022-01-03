@@ -1,0 +1,114 @@
+.hire-me-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.hire-me-top{
+    text-align: center;
+}
+.hire-me-top-line{
+    width: 30%;
+    height: 1.5px;
+    background-color: #FEC10E;
+    margin: 10vh auto;
+    border-radius: 50%;
+}
+.hire-me-top h4{
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin: 5vh 0;
+}
+.hire-me-top h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 4px;
+    
+}
+.hire-box-container{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 10vh;
+}
+.hire-box{
+    width: 30%;
+}
+.hire-box svg{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 2vh;
+}
+.hire-box-content h4{
+    margin-bottom: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.hire-box-content p{
+    margin-bottom: 2vh;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+.sub-hire{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.sub-hire-line{
+    width: 100%;
+    height: 1.5px;
+    background-color: #FEC10E;
+    margin-bottom: 5vh;
+    border-radius: 50%;
+}
+.sub-hire-content{
+    width: 50%;
+}
+.sub-hire-content h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.sub-hire-content form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sub-hire-content form input[type="text"], .sub-hire-content form input[type="email"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 2.5vh;
+    background-color: #111129;
+    color: #fff;
+    border: none;
+}
+.hire-msg-box{
+    height: 150px;
+    width: 100%;
+}
+.sub-hire-content form input[type="button"]{
+    width: 30%;
+    text-transform: capitalize;
+    background-color: #FEC10E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: 500;
+}

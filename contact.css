@@ -1,0 +1,93 @@
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 15vh auto;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.cl-top{
+    margin-bottom: 7vh;
+}
+.cl-top h4, .cl-top h1{
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.cl-top h4{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 3vh;
+}
+.cl-top h1{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 3vh;
+}
+.cl-top-line{
+    width: 20%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #FEC10E;
+}
+.cl-bottom p{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5vh;
+}
+.cl-bottom p span svg{
+    margin-right: .5vw;
+}
+.cl-bottom p, .cl-bottom p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.contact-right h3{
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-right form input[type="text"], .contact-right form input[type="email"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 2.5vh;
+    background-color: #111129;
+    color: #fff;
+    border: none;
+}
+.contact-right form input[type="button"]{
+    width: 30%;
+    text-transform: capitalize;
+    background-color: #FEC10E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: 500;
+}
