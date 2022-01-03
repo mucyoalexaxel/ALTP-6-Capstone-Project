@@ -1,12 +1,14 @@
 .icons{
-    display: flex;
-    
+    display: flex;    
 }
 .icons li{
     list-style: none;
 }
 .icon{
     margin-left: .6vw;
+}
+.abt-icon{
+    margin-right: 1vw;
 }
 .foot-icon{
    margin-left: 2vw;

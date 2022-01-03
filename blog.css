@@ -13,7 +13,7 @@
     height: 2px;
     background-color: #FEC10E;
     margin: 50px auto;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 .blog-box{
     display: flex;
