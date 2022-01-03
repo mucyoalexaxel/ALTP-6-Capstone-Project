@@ -75,6 +75,7 @@
     background-color: #111129;
     color: #fff;
     border: none;
+    outline: none;
 }
 .contact-right form input[type="button"]{
     width: 30%;
@@ -85,6 +86,7 @@
     border-radius: 5px;
     padding: 8px;
     display: flex;
+    justify-content: center;
     align-self: flex-end;
     font-size: 15px;
     font-weight: 500;

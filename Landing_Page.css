@@ -47,6 +47,7 @@
     height: 50px;
     padding: 0 20px;
     border: none;
+    outline: none;
     border-radius: 5px;
     background-color: #fff;
     color: #000;
@@ -67,14 +68,16 @@
     width: 100%;
 }
 .top button{
-    height: 50px;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     margin-bottom: 1vh;
     background-color: #fff;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 15px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;
+    border: none;
 }
 #home-link-active{
     color: #ffbf00;

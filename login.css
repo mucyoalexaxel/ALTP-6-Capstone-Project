@@ -27,6 +27,7 @@
     background-color: #111129;
     color: #fff;
     border: none;
+    outline: none;
 }
 #log-but{
     padding: 15px 20px 15px 20px;
