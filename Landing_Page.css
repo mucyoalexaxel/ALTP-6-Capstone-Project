@@ -21,14 +21,15 @@
 }
 .heading1{
     color: #D69F00;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 70px;
     letter-spacing: 5px;
 }
 .heading2{
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 30px;
+    letter-spacing: 5px;
     margin-bottom: 5vh;
 }
 .lower-content{
@@ -79,15 +80,6 @@
     height: 50px;
     border: none;
 }
-#home-link-active{
-    color: #ffbf00;
-    font-weight: 550;
-}
-.nav-line{
-    border-radius: 50px;
-    width: 60%;
-    margin: auto;
-    color: #ffebaf;
-}
+
 
 
