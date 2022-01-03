@@ -16,13 +16,33 @@
 .left-side a, .right-side a{
     color: #000;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 21px;
     font-weight: 400;
     
 }
+.left-side li:hover, .right-side li:hover{
+    
+    transition: .3s;
+}
 .left-side a:hover, .right-side a:hover{
     color: #FEC10E;
-    transition: .3s;
+    transition: .3s ease-out;
+}
+#home-link-active{
+    color: #ffbf00;
+    font-weight: 400 !important;
+}
+#home-link-active:hover{
+    color: #000;
+    transition: color .3s ease-in;
+    font-weight: 400 !important;
+}
+.head-line{
+    border-radius: 50%;
+    width: 70%;
+    height: 3px;
+    margin: .5vh auto 0 auto;
+    background-color: #FEC10E;
 }
 .right-side li{
     margin-right: 4vw;
