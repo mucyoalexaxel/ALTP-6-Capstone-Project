@@ -136,3 +136,8 @@
     text-align: left;
     letter-spacing: 4px;
 }
+
+/* Mobile Designs */
+@media (max-width:915px) {
+    
+}

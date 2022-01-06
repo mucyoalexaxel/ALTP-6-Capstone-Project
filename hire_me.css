@@ -116,3 +116,8 @@
     font-size: 15px;
     font-weight: 500;
 }
+
+/* Mobile Designs */
+@media (max-width:915px) {
+    
+}

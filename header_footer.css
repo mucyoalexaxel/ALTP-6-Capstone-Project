@@ -1,7 +1,7 @@
 .header{
     display: flex;
     width: 100%;
-    height: 20vh;
+    padding: 50px 10px;
     background-color: #fff;
     color: #000;
     justify-content: space-between;
@@ -26,24 +26,30 @@
 }
 .left-side a:hover, .right-side a:hover{
     color: #FEC10E;
-    transition: .3s ease-out;
+    transition: all .3s ease-out;
+    border-bottom: 3px solid #ffbf00;
+    padding-bottom: 3px;
 }
 #home-link-active{
     color: #ffbf00;
     font-weight: 400 !important;
+    border-bottom: 3px solid #ffbf00;
+    padding-bottom: 5px;
 }
 #home-link-active:hover{
     color: #000;
-    transition: color .3s ease-in;
+    transition: all .3s ease-in;
     font-weight: 400 !important;
+    border-bottom: 3px solid #000;
+    padding-bottom: 2px;
 }
-.head-line{
-    border-radius: 50%;
+/* .head-line{
+    border-radius: 50%; 
     width: 70%;
     height: 3px;
     margin: .5vh auto 0 auto;
     background-color: #FEC10E;
-}
+} */
 .right-side li{
     margin-right: 4vw;
     width: fit-content;
@@ -122,4 +128,33 @@
 }
 .foot-left li{
     margin-right: 2vw;
+}
+
+/* Header Title */
+.middle-header-title, .ham-menu-bar{
+    display: none;
+}
+.middle-header-title a{
+    text-decoration: none;
+    color: #ffbf00;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-shadow: .5px .5px 5px #a8810b;
+}
+
+/* Mobile Designs */
+@media (max-width:915px) {
+    .header{
+        padding: 30px 30px;
+    }
+    .left-side, .right-side{
+        display: none;
+    }
+    .middle-header-title, .ham-menu-bar{
+        display: flex;
+    }
+    .ham-menu{
+        cursor: pointer;
+    }
 }
