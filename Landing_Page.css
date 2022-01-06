@@ -84,6 +84,17 @@
     outline: none;
     cursor: pointer;
 }
+.top button:hover{
+    background-color: #000;
+    color: #D69F00;
+    border: 2px solid #D69F00;
+    transition: all .3s ease-out;
+}
+.icon a:hover{
+    border-bottom: 2px solid #D69F00;
+    padding-bottom: 4px;
+    transition: padding-bottom .3s ease-out;
+}
 
 
 /* Mobile Designs */
@@ -94,15 +105,15 @@
     .heading1{
         color: #D69F00;
         font-weight: 100;
-        font-size: 50px;
+        font-size: 20px;
         letter-spacing: 6px;
-        line-height: 25px;
+        /* line-height: 30px; */
         text-shadow: 1px 2px 6px #D69F00;
     }
     .heading2{
         color: #fff;
         font-weight: 500;
-        font-size: 25px;
+        font-size: 18px;
         letter-spacing: 5px;
         margin-bottom: 5vh;
         text-shadow: 1px 1px 4px #D69F00;
@@ -117,11 +128,14 @@
     }
     .l-side{
         text-align: center;
-        width: 70%;
+        width: 80%;
     }
     .r-side{
         text-align: center;
         width: 70%;
+    }
+    .bottom{
+        justify-content: space-evenly;
     }
 }
 
