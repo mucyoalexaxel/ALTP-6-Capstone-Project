@@ -146,21 +146,46 @@
     border: none;
     background-color: transparent;
 }
+.closeMenu{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
 
 /* Mobile Designs */
 @media (max-width:915px) {
     .header{
         padding: 30px 20px;
+        align-items: flex-start;
+    }
+    #nav-ul{
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: #fff;
+        transition: top 1s ease;
+        display: none;
     }
     .left-side, .right-side{
-        display: none;
+        flex-direction: column;
     }
     .middle-header-title, .ham-menu-bar{
         display: block;
     }
+    /* Hamburger Menu */
     .ham-menu{
         cursor: pointer;
     }
-    /* Hamburger Menu */
+    .closeMenu {
+        display: none;
+        position: relative;
+        right: 10px;
+    }
+    
     
 }
