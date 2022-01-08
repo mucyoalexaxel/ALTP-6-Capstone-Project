@@ -9,24 +9,28 @@
 </head>
 <body>
     <header class="header">
-        <div class="left-side">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="hire_me.html">HIRE ME</a></li>
+        <div class="nav">
+            <div class="header-title-logo"><a href="index.html">itsMCY</a></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html" id="home-link-active">HOME</a><div class="head-line"></div></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="hire_me.html">HIRE ME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
         </div>
-        <div class="middle-header-title">
-            <a href="index.html">MCY</a>
+        <div class="left-side">
+            <li><a href="index.html" id="home-link-active">HOME</a><div class="head-line"></div></li>
+            <li><a id="hover-effect" href="blog.html">BLOG</a><div class="hover-line"></div></li>
+            <li><a id="hover-effect" href="hire_me.html">HIRE ME</a><div class="hover-line"></div></li>
         </div>
         <div class="right-side">
-            <li><a href="about.html" id="home-link-active">ABOUT ME</a><div class="head-line"></div></li>
-            <li><a href="contact.html">CONTACT ME</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-        </div>
-        <div class="ham-menu-bar">
-            <i class="ham-menu" id="ham-menu"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="30" height="30"
-                viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffbf00"><path d="M145.125,91.375h-118.25c-2.967,0 -5.375,-2.408 -5.375,-5.375c0,-2.967 2.408,-5.375 5.375,-5.375h118.25c2.967,0 5.375,2.408 5.375,5.375c0,2.967 -2.408,5.375 -5.375,5.375z"></path><path d="M145.125,50.16667h-118.25c-2.967,0 -5.375,-2.408 -5.375,-5.375c0,-2.967 2.408,-5.375 5.375,-5.375h118.25c2.967,0 5.375,2.408 5.375,5.375c0,2.967 -2.408,5.375 -5.375,5.375z"></path><path d="M145.125,132.58333h-118.25c-2.967,0 -5.375,-2.408 -5.375,-5.375c0,-2.967 2.408,-5.375 5.375,-5.375h118.25c2.967,0 5.375,2.408 5.375,5.375c0,2.967 -2.408,5.375 -5.375,5.375z"></path></g></g></svg></i>
+            <li><a id="hover-effect" href="about.html">ABOUT ME</a><div class="hover-line"></div></li>
+            <li><a id="hover-effect" href="contact.html">CONTACT ME</a><div class="hover-line"></div></li>
+            <li><a id="hover-effect" href="login.html">LOGIN</a><div class="hover-line"></div></li>
         </div>
     </header>
     <main class="about-container">
@@ -210,5 +214,6 @@
             </div>
         </div>
     </footer>
+    <script src="./JS/app.js"></script>
 </body>
 </html>

@@ -7,7 +7,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .left-side, .right-side{
     list-style: none;
     display: flex;
@@ -18,38 +17,37 @@
     text-decoration: none;
     font-size: 21px;
     font-weight: 400;
-    
 }
-.left-side li:hover, .right-side li:hover{
-    
-    transition: .3s;
-}
-.left-side a:hover, .right-side a:hover{
+.left-side li a:hover, .right-side li a:hover{
+    padding-bottom: 10px;
     color: #FEC10E;
     transition: all .3s ease-out;
-    border-bottom: 3px solid #ffbf00;
-    padding-bottom: 3px;
 }
 #home-link-active{
     color: #ffbf00;
     font-weight: 400 !important;
-    border-bottom: 3px solid #ffbf00;
     padding-bottom: 5px;
 }
 #home-link-active:hover{
     color: #000;
     transition: all .3s ease-in;
     font-weight: 400 !important;
-    border-bottom: 3px solid #000;
-    padding-bottom: 2px;
 }
-/* .head-line{
+.head-line{
     border-radius: 50%; 
     width: 70%;
     height: 3px;
     margin: .5vh auto 0 auto;
     background-color: #FEC10E;
-} */
+}
+.hover-line{
+    border-radius: 50%; 
+    width: 70%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #FEC10E;
+    display: none;
+}
 .right-side li{
     margin-right: 4vw;
     width: fit-content;
@@ -131,61 +129,109 @@
 }
 
 /* Header Title */
-.middle-header-title, .ham-menu-bar{
-    display: none;
-}
-.middle-header-title a{
+.header-title-logo a{
     text-decoration: none;
-    color: #FEC10E;
+    color: #000;
     font-size: 30px;
     font-weight: 400;
-    letter-spacing: 4px;
-}
-.hamburger{
-    outline: none;
-    border: none;
-    background-color: transparent;
-}
-.closeMenu{
-    font-size: 2rem;
+    letter-spacing: 2px;
     cursor: pointer;
+}
+ .nav{
     display: none;
+}
+ .mainMenu {
+    display: flex;
+    align-items: flex-start !important;
+    list-style: none;
+}
+.mainMenu li{
+    margin-left: 30px;
+}
+ .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+}
+ .openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.mainMenu .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-bars{color: #000;}
+.fa-times{
+    color: #000;
+    z-index: 2;
 }
 
 /* Mobile Designs */
 @media (max-width:915px) {
     .header{
-        padding: 30px 20px;
-        align-items: flex-start;
+        padding: 30px 30px;
     }
-    #nav-ul{
-        height: 100vh;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background: #fff;
-        transition: top 1s ease;
-        display: none;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
     .left-side, .right-side{
-        flex-direction: column;
-    }
-    .middle-header-title, .ham-menu-bar{
-        display: block;
+        display: none;
     }
     /* Hamburger Menu */
-    .ham-menu{
-        cursor: pointer;
-    }
-    .closeMenu {
+     .mainMenu {
+        height: 100vh;
+        width: 60%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 1;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right .5s ease;
+        background: radial-gradient(circle,#FEC10E,#a37a00);
+        border-top-left-radius: 10rem;
+        border-bottom-left-radius: 10rem;
         display: none;
-        position: relative;
-        right: 10px;
     }
-    
+    .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .openMenu {
+        display: block;
+    }
+    .head-line{
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+    }
+    .hover-line{
+        width: 50%;
+        height: 2px;
+        background-color: #000;
+    }
+    #home-link-active{
+        color: #fff;
+        font-weight: 400 !important;
+        padding-bottom: 2px;
+    }
+    #home-link-active:hover{
+        color: #000;
+        transition: all .3s ease-in;
+        font-weight: 400 !important;
+    }
     
 }
