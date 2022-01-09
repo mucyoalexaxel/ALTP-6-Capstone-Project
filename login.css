@@ -30,36 +30,47 @@
     outline: none;
 }
 #log-but{
-    padding: 15px 20px 15px 20px;
+    padding: 10px 0;
     color: white;
     background-color: #D69F00;
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-    width: 50%;
+    width: 45%;
+    border: 2px solid #D69F00;
     border-radius: 50px;
     margin: 0 auto 2vh auto;
-    
+}
+#log-but:hover{
+    color: #D69F00;
+    background-color: transparent;
+    transition: all .3s ease;
 }
 .log-top, .log-bot{
     display: flex;
     width: 30%;
     justify-content: space-between;
     margin-bottom: 2vh;
-
 }
 .log-top li, .log-bot li{
     list-style: none;
-    
 }
 .log-top li a{
     text-decoration: none;
     color: #fff;   
 }
+.log-top li a:hover{
+    color: #D69F00;
+    transition: color .3s ease; 
+}
 .log-bot li a{
     text-decoration: #fff;
     color: #D69F00;
+}
+.log-bot li a:hover{
+    color: #fff;
+    transition: color .3s ease;
 }
 .login-head{
     margin-bottom: 2vh;
@@ -78,17 +89,23 @@
 input[type="checkbox"]{
     width: 20px;
     height: 20px;
-    cursor: pointer;
-    margin-right: .5vw;
+    margin-right: 10px;
     appearance: none;
     -webkit-appearance: none;
     border: 2.5px solid #D69F00;
     border-radius: 3px;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    
+    justify-content: center;    
 }
+input[type="checkbox"], .check-box label{
+    cursor: pointer;
+}
+.check-box label:hover{
+    color: #D69F00;
+    transition: color .3s ease;
+}
+
 input[type="checkbox"]:after{
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
@@ -107,5 +124,34 @@ input[type="checkbox"]:checked:after{
 
 /* Mobile Designs */
 @media (max-width:915px) {
-    
+    .log-line{
+        width: 20%;
+    }
+    .form-log-content{
+        margin-bottom: 15px;
+        width: 100%;
+    } 
+    #log-but{
+        padding: 10px 0;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .log-top, .log-bot{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .log-top li a, .check-box label{
+        font-size: 12px;
+    }
+    .log-bot li a{
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+}
+@media (maxwidth:320px) {
+    .login-content{
+        width: 90%;
+    }
 }
