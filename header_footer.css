@@ -168,10 +168,14 @@
     display: none;
     cursor: pointer;
 }
-.fa-bars{color: #000;}
+.fa-bars{
+    color: #000;
+    outline: none;
+}
 .fa-times{
     color: #000;
     z-index: 2;
+    outline: none;
 }
 
 /* Mobile Designs */
