@@ -19,3 +19,10 @@
 .icon img{
     width: 30px;
 }
+@media (max-width:915px) {
+    .space-icons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
