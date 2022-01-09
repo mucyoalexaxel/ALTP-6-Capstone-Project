@@ -82,7 +82,7 @@
     text-transform: capitalize;
     background-color: #FEC10E;
     color: #fff;
-    border: none;
+    border: 1px solid #FEC10E;
     border-radius: 5px;
     padding: 8px;
     display: flex;
@@ -91,8 +91,51 @@
     font-size: 15px;
     font-weight: 500;
 }
+.contact-right form input[type="button"]:hover{
+    background-color: transparent;
+    color: #FEC10E;
+    transition: all .3s ease;
+}
 
 /* Mobile Designs */
 @media (max-width:915px) {
-    
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        margin: 10vh auto;
+    }
+    .contact-left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .cl-top{
+        margin-bottom: 0;
+    }
+    .cl-top h4{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .cl-top h1{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .cl-top-line{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .cl-bottom p{
+        margin-bottom: 10px;
+    }
+    .cl-bottom p span svg{
+        margin-right: 10px;
+    }
+    .cl-bottom p, .cl-bottom p a{
+        font-size: 12px;
+    }
+    .contact-right{
+        width: 100%;
+    }
+    .contact-right form input[type="button"]{
+        width: 50%;
+    }
 }
