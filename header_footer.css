@@ -33,21 +33,7 @@
     transition: all .3s ease-in;
     font-weight: 400 !important;
 }
-.head-line{
-    border-radius: 50%; 
-    width: 70%;
-    height: 3px;
-    margin: .5vh auto 0 auto;
-    background-color: #FEC10E;
-}
-.hover-line{
-    border-radius: 50%; 
-    width: 70%;
-    height: 3px;
-    margin: 0 auto;
-    background-color: #FEC10E;
-    display: none;
-}
+
 .right-side li{
     margin-right: 4vw;
     width: fit-content;

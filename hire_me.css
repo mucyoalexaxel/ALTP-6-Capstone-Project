@@ -98,12 +98,21 @@
     border: none;
     outline: none;
 }
+.sub-hire-content form textarea{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 2.5vh;
+    background-color: #111129;
+    color: #fff;
+    border: none;
+    outline: none;
+}
 .hire-msg-box{
     height: 150px;
     width: 100%;
 }
 .sub-hire-content form input[type="button"]{
-    width: 30%;
+    width: 25%;
     text-transform: capitalize;
     background-color: #FEC10E;
     color: #fff;
