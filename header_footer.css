@@ -1,7 +1,7 @@
 .header{
     display: flex;
     width: 100%;
-    padding: 50px 10px;
+    padding: 40px 10px;
     background-color: #fff;
     color: #000;
     justify-content: space-between;
@@ -15,22 +15,27 @@
 .left-side a, .right-side a{
     color: #000;
     text-decoration: none;
-    font-size: 21px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
 }
 .left-side li a:hover, .right-side li a:hover{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     color: #FEC10E;
-    transition: all .3s ease-out;
+    border-bottom: 2px solid #FEC10E;
+    transition: padding-bottom .3s ease-out;
+}
+.left-side li a, .right-side li a, .mainMenu li a{
+    text-transform: capitalize;
 }
 #home-link-active{
     color: #ffbf00;
     font-weight: 400 !important;
-    padding-bottom: 5px;
 }
 #home-link-active:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
     color: #000;
-    transition: all .3s ease-in;
+    transition: padding-bottom .3s ease-in;
     font-weight: 400 !important;
 }
 
@@ -217,13 +222,10 @@
     }
     #home-link-active{
         color: #fff;
-        font-weight: 400 !important;
-        padding-bottom: 2px;
     }
     #home-link-active:hover{
         color: #000;
-        transition: all .3s ease-in;
-        font-weight: 400 !important;
+        transition: color .3s ease-in;
     }
     /* Footer */
     .top-foot{

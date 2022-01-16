@@ -74,7 +74,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-bottom: 2vh;
+    margin-bottom: 15px;
     background-color: #fff;
     border-radius: 2px;
     font-weight: 500;
@@ -85,16 +85,12 @@
     cursor: pointer;
 }
 .top button:hover{
-    background-color: #000;
+    background-color: transparent;
     color: #D69F00;
     border: 2px solid #D69F00;
     transition: all .3s ease-out;
 }
-.icon a:hover{
-    border-bottom: 2px solid #D69F00;
-    padding-bottom: 4px;
-    transition: padding-bottom .3s ease-out;
-}
+
 
 
 /* Mobile Designs */

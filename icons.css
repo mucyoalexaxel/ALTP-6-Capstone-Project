@@ -7,6 +7,13 @@
 .icon{
     margin-left: .6vw;
 }
+.icon:hover{
+    border-bottom: 2px solid #D69F00;
+    padding-bottom: 5px;    
+    transform: translateY(-5px);
+    transition: padding-bottom .3s ease, transform .5s ease;
+}
+
 .abt-icon{
     margin-right: 1vw;
 }
