@@ -1,26 +1,3 @@
-// Header
-// HAMBURGER MENU & Navigation Links
-
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-
-
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
-
-
-function show(){
-    mainMenu.style.display = 'flex';
-    mainMenu.style.right = '0';
-}
-function close(){
-    mainMenu.style.right = '-100%';
-}
-
-
-
-// Login Page Form Validation
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const password = document.getElementById('password');
@@ -62,3 +39,27 @@ function setSuccessFor(input) {
 	formControl.className = 'form-control success';
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});

@@ -42,11 +42,21 @@
             <div class="log-line"></div>
         </div>
         <div class="form-log-content">
-            <form action="GET">
-                <input type="text" name="username" id="user-id" placeholder="Username">
-                <input type="password" name="psd" id="psd-id" placeholder="Password">
-                <input type="submit" value="GET STARTED" id="log-but">
-           </form>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <input type="text" placeholder="Username" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password" id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>                
+                <button id="log-but">Get Started</button>
+            </form>
         </div>
         <div class="log-top">
             <li class="check-box"><input type="checkbox" name="keep-me-log" id="keep-me-log-id"><label for="keep-me-log-id">Keep Me Logged In</label></li>

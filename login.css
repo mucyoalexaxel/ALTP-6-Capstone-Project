@@ -20,13 +20,13 @@
     width: 100%;
 }
 .form-log-content form input{
-    padding: 10px 20px;
+    padding: 15px 20px;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 10px;
     margin-bottom: 2vh;
-    background-color: #111129;
+    background-color: transparent;
     color: #fff;
-    border: none;
+    border: 1px solid #9c7500;
     outline: none;
 }
 #log-but{
@@ -36,6 +36,7 @@
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 500;
+    text-transform: capitalize;
     text-align: center;
     width: 45%;
     border: 2px solid #D69F00;
@@ -82,6 +83,57 @@
     border-radius: 50%;
     background-color: #D69F00;
 }
+
+/* Form Validation */
+.form-control {
+	padding-bottom: 10px;
+	position: relative;
+    margin-bottom: 10px;
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 17px;
+	right: 20px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    padding-left: 20px;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+/* Keep Me Logged In CheckBox */
 .check-box{
     display: flex;
     align-items: center;
@@ -121,6 +173,7 @@ input[type="checkbox"]:hover{
 input[type="checkbox"]:checked:after{
     display: block;
 }
+
 
 /* Mobile Designs */
 @media (max-width:915px) {
