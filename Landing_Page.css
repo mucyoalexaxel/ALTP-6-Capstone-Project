@@ -97,7 +97,7 @@
 @media (max-width:915px) {
     .content{
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
     .heading1{
         color: #D69F00;
@@ -143,5 +143,9 @@
         justify-content: space-evenly;
     }
 }
-
+@media (max-width:320px) {
+    .content{
+        height: 100vh;
+    }
+}
 
