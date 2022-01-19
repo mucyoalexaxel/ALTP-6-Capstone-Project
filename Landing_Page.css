@@ -97,6 +97,7 @@
 @media (max-width:915px) {
     .content{
         width: 100%;
+        height: 100vh;
     }
     .heading1{
         color: #D69F00;
