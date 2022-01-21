@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fb78c4ea1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="adminpage.css">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin | Home</title>
+</head>
+<body>
+    <header class="navigation">
+        <ul>
+            <li>
+                <a href="admin.html">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="title"><h2>Admin</h2></span>
+                </a>
+            </li>
+            <li>
+                <a href="./articles.html">
+                <span class="icon"><i class="far fa-newspaper"></i></span>
+                <span class="title">Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="./queries.html">
+                    <span class="icon"><i class="fas fa-comment"></i></span>
+                    <span class="title">Queries</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i> </span>
+                <span class="title">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <header class="topbar">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <!-- Search Bar Optional  -->
+            <!-- <div class="search">
+                <label><input type="text" placeholder="search here"><i class="fas fa-search"></i></label>
+            </div> -->
+            <div class="user">
+                <img class="user" src="./images/me.jpg">
+            </div>
+        </header>
+        <main class="adminContent">
+            
+        </main>
+    </main>
+    <script>
+        function toggleMenu(){
+         let toggle = document.querySelector('.toggle');
+         let navigation = document.querySelector('.navigation');
+         let main = document.querySelector('.main');
+         main.classList.toggle('active')
+         toggle.classList.toggle('active');
+         navigation.classList.toggle('active');
+}
+    </script>
+    
+</body>
+</html>
