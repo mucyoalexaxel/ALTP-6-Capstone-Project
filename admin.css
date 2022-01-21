@@ -10,9 +10,10 @@
     top: 0;
     width: 300px;
     height: 100%;
-    background: #003147;
+    background: #000;
     transition: 0.5s;
     overflow: hidden;
+    padding-top: 20px;
 }
 .navigation.active{
     width: 60px;
@@ -28,7 +29,7 @@
     list-style: none;
 }
 .navigation ul li:hover{
-    background: #03a9f4;
+    background: #FEC10E;
 }
 .navigation ul li:nth-child(1):hover{
     background: transparent;
@@ -82,7 +83,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .toggle{
     position: relative;
@@ -137,9 +137,9 @@
     left: 15px;
     top: 14px;
 }
-
-.form-article input, select {
-    height: 30px;
+.icon-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
 }
-
 
