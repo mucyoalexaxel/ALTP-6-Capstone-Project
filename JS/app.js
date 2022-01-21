@@ -28,8 +28,13 @@ const message = document.getElementById('message');
 
 form1.addEventListener('submit', e => {
 	e.preventDefault();
-	checkInput()
-	setTimeout(displayMessage, 1000);
+	checkInput();
+	const data = [{
+		name: name.value,
+		email: email.value,
+		message: message.value
+	}];
+	localStorage.setItem("messages", JSON.stringify(data));
 });
 
 function checkInput() {
