@@ -87,7 +87,8 @@
 .sub-hire-content form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .sub-hire-content form input[type="text"], .sub-hire-content form input[type="email"] {
     padding: 10px 20px;
@@ -97,6 +98,7 @@
     color: #fff;
     border: none;
     outline: none;
+    width: 100%;
 }
 .sub-hire-content form textarea{
     padding: 10px 20px;
@@ -106,13 +108,10 @@
     color: #fff;
     border: none;
     outline: none;
-}
-.hire-msg-box{
-    height: 150px;
     width: 100%;
 }
-.sub-hire-content form input[type="button"]{
-    width: 25%;
+.sub-hire-content form button{
+    width: 30%;
     text-transform: capitalize;
     background-color: #FEC10E;
     color: #fff;
@@ -125,11 +124,20 @@
     font-size: 15px;
     font-weight: 500;
 }
-.sub-hire-content form input[type="button"]:hover{
+.sub-hire-content form button:hover{
     background-color: transparent;
     color: #FEC10E;
     border-radius: 5px;
     transition: .3s ease;
+}
+
+.iSpecial{
+    top: 14px !important;
+    right: 20px !important;
+}
+.iSpecial-msg{
+    top: 120px !important;
+    right: 20px !important;
 }
 
 /* Mobile Designs */

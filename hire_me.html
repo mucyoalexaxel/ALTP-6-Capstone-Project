@@ -82,11 +82,27 @@
             <div class="sub-hire-line"></div>
             <div class="sub-hire-content">
                 <h2>hire me for your next<br>creative project</h2>
-                <form action="get" method="get">
-                    <input type="text" name="name-box" id="name-id" placeholder="Name">
-                    <input type="email" name="email-box" id="email-id" placeholder="Email">
-                    <textarea name="message-box" id="message-id" placeholder="Message" class="hire-msg-box" cols="30" rows="10"></textarea>
-                    <input type="button" value="contact me">
+                
+                <form id="form1" class="form">
+                    <div class="form-control">
+                        <input type="text" placeholder="Name" id="name"/>
+                        <i class="fas fa-check-circle iSpecial"></i>
+                        <i class="fas fa-exclamation-circle iSpecial"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" placeholder="a@example.com" id="email" />
+                        <i class="fas fa-check-circle iSpecial"></i>
+                        <i class="fas fa-exclamation-circle iSpecial"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <i class="fas fa-check-circle iSpecial-msg"></i>
+                        <i class="fas fa-exclamation-circle iSpecial-msg"></i>
+                        <small>Error message</small>
+                    </div>
+                    <button>Contact Me</button>
                 </form>
             </div>
         </div>

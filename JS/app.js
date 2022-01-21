@@ -20,33 +20,88 @@ function close(){
 
 
 
-// Login Page Form Validation
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const password = document.getElementById('password');
+// // Login Page Form Validation
+// const form = document.getElementById('form');
+// const username = document.getElementById('username');
+// const password = document.getElementById('password');
 
-form.addEventListener('submit', e => {
-    e.preventDefault();	
-	checkInputs();
+// form.addEventListener('submit', e => {
+//     e.preventDefault();	
+// 	checkInputs();
+// });
+
+// function checkInputs() {
+// 	// trim to remove the whitespaces
+// 	const usernameValue = username.value.trim();
+// 	const passwordValue = password.value.trim();
+	
+// 	if(usernameValue === '') {
+// 		setErrorFor(username, 'Username cannot be blank');
+// 	} else {
+// 		setSuccessFor(username);
+// 	}
+	
+	
+// 	if(passwordValue === '') {
+// 		setErrorFor(password, 'Password cannot be blank');
+// 	} else {
+// 		setSuccessFor(password);
+// 	}
+// }
+
+// function setErrorFor(input, message) {
+// 	const formControl = input.parentElement;
+// 	const small = formControl.querySelector('small');
+// 	formControl.className = 'form-control error';
+// 	small.innerText = message;
+// }
+
+// function setSuccessFor(input) {
+// 	const formControl = input.parentElement;
+// 	formControl.className = 'form-control success';
+// }
+
+
+
+// Contact & Hire Me Page Validation 
+
+const form1 = document.getElementById('form1');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+form1.addEventListener('submit', e => {
+	e.preventDefault();
+	checkInput()
+	setTimeout(displayMessage, 1000);
 });
 
-function checkInputs() {
+function checkInput() {
 	// trim to remove the whitespaces
-	const usernameValue = username.value.trim();
-	const passwordValue = password.value.trim();
+	const nameVal = name.value.trim();
+	const emailVal = email.value.trim();
+	const messageVal = message.value.trim();
 	
-	if(usernameValue === '') {
-		setErrorFor(username, 'Username cannot be blank');
+	if(nameVal === '') {
+		setErrorFor(name, 'Username cannot be blank');
 	} else {
-		setSuccessFor(username);
+		setSuccessFor(name);
 	}
 	
-	
-	if(passwordValue === '') {
-		setErrorFor(password, 'Password cannot be blank');
+	if(emailVal === '') {
+		setErrorFor(email, 'Email cannot be blank');
+	} else if (!isEmail(emailVal)) {
+		setErrorFor(email, 'Please Provide A Valid Email');
 	} else {
-		setSuccessFor(password);
+		setSuccessFor(email);
 	}
+	
+	if(messageVal === '') {
+		setErrorFor(message, 'Please Provide A Feedback');
+	} else {
+		setSuccessFor(message);
+	}
+	
 }
 
 function setErrorFor(input, message) {
@@ -60,4 +115,11 @@ function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'form-control success';
 }
+	
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
 
+const displayMessage = () =>{
+	alert("Your Message Has Been Submitted Succefully")
+}
