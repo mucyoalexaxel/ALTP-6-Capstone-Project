@@ -86,8 +86,8 @@ const createArticle= () => {
     fetch(`${apiUrl}/admin/blog_articles`, {
         method: 'POST',
         headers: {
-             'Content-Type': 'application/json; charset=UTF-8',
-             'Authorization': bearer
+            'Authorization': bearer,
+             'Content-Type': 'application/json; charset=UTF-8'
          },
          body: JSON.stringify({
             title: createArticleForm().title,
@@ -97,6 +97,7 @@ const createArticle= () => {
         if (res.ok === true ) return res.json()
         console.log(`Error Happened...>> Status Code: ${res.status}`) 
         }).then(data => {
+            console.log(data)
             alert('Article Created Successfully')
      })
 }
