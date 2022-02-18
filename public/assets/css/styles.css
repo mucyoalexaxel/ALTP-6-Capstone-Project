@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 390; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 140; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -654,6 +654,11 @@ img{
     padding: 1.5rem;
     border-radius: .5rem;
 }
+.blog__modal-content{
+    width: 95% !important;
+    max-height: 80%;
+    overflow-y: scroll;
+}
 
 .services__modal-services{
     row-gap: 1rem;
@@ -667,6 +672,7 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
+    margin-top: var(--mb-2);
 }
 
 .services__modal-close{
@@ -727,6 +733,8 @@ img{
 .portfolio__description{
     color: var(--text-color);
     margin-bottom: var(--mb-0-75);
+    height: 100px;
+    overflow: hidden;
 }
 
 .portfolio__button:hover .button__icon{
@@ -762,7 +770,6 @@ img{
 .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet{
     outline: none;
 }
-
 
 
 /* PROJECT IN MIND */
@@ -839,6 +846,8 @@ img{
     transform: translateX(.3rem);
     transition: transform .3s ease;
 }
+
+
 
 /* FOOTER */
 
@@ -1143,6 +1152,11 @@ img{
     }
     .services__modal-content{
         width: 450px;
+    }
+    .blog__modal-content{
+        width: 60% !important;
+        max-height: 100%;
+        overflow-y: scroll;
     }
 
     .portfolio__img{

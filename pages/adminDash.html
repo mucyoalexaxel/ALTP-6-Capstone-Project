@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../public/assets/css/admin.css">
+    <title>Admin | Dashboard</title>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-toggle">
+
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <div class="brand">
+                <h2><span class="lab la-staylinked"></span>Alex Axel M.</h2>
+            </div>
+
+            <div class="sidebar-avatar">
+
+                <div>
+                    <img src="../public/assets/img/me.jpg" alt="Admin User Image" class="avatar-img">
+                </div>
+    
+                <div class="avatar-info">
+                    <div class="avatar-text">
+                        <h4>Alex Axel Mucyo</h4>
+                    </div>
+                    <span class="las la-angle-double-down"></span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="./adminDash.html" class="active">
+                            <span class="las la-adjust"></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./CreateArticle.html" >
+                            <span class="las la-adjust"></span>
+                            <span>Articles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-adjust"></span>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-adjust"></span>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        
+
+        
+
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-title-wrapper">
+                <label for="">
+                    <span class="las la-bars"></span>
+                </label>
+                <div class="header-title">
+                    <h1>Analytics</h1>
+                    <p>Website Analytics<span class="las la-chart-line"></span></p>
+                </div>
+            </div>
+            <div class="header-action">
+                <button class="btn btn-main" onclick="logout()">
+                    <span class="las la-user"></span>Logout
+                </button>
+            </div>
+        </header>
+
+        <main>
+            
+            <div class="message-container" >
+                <!-- Admin Message View -->
+                <div class="msg-details-view" id="adminQuerries">
+                    
+                </div>
+                
+                
+            </div>
+            
+
+            <div class="article-container" >
+                <!-- Admin Article View -->
+                <div class="article-details-view" id="adminArticles">
+
+                </div>
+                
+                <div class="article-view" id="">
+                    <div class="article-view-details" id="">
+                        <div class="article-view-content">
+                            <h3 class="article-title"></h3>
+                            <p class="article-description"></p>
+                        </div>
+                        <p class="article-action-btns">
+                            <button class="article-action-btn" onclick="click()">View</button>
+                            <button class="article-action-btn" onclick="click()">Edit</button>
+                            <button class="article-action-btn" onclick="click()">Delete</button>
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="../public/assets/js/Admin.js"></script>
+</body>
+</html>
