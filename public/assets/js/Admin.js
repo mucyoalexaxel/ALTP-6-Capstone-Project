@@ -76,6 +76,31 @@ const fetchQuerries = () => {
 }
 fetchQuerries()
 
+const createArticleForm = () => {
+    const title = document.getElementById('articleTitle').value
+    const articleContent = document.getElementById('articleContent').value
+    return newArticle = {title, articleContent}
+}
+
+const createArticle= () => {
+    fetch(`${apiUrl}/admin/blog_articles`, {
+        method: 'POST',
+        headers: {
+             'Content-Type': 'application/json; charset=UTF-8',
+             'Authorization': bearer
+         },
+         body: JSON.stringify({
+            title: createArticleForm().title,
+            articleContent: createArticleForm().articleContent
+         })
+     }).then(res => {
+        if (res.ok === true ) return res.json()
+        console.log(`Error Happened...>> Status Code: ${res.status}`) 
+        }).then(data => {
+            alert('Article Created Successfully')
+     })
+}
+
 
 
 /**
@@ -90,6 +115,6 @@ fetchQuerries()
             console.log(`Error Happened...>> Status Code: ${res.status}`)
         }).then(data => {
             document.cookie =  `accessToken=${accessToken};path=/; max-age=0; sameSite=Lax;`;
-            return window.location.href = '../../../index.html'
+            return window.location.href = '../../../ALTP-6-Capstone-Project/index.html#home'
      })
 }
