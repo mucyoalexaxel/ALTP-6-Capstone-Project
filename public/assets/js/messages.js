@@ -18,6 +18,15 @@ const messageFormData = () => {
     return messageData
 }
 
+
+const clearForm = () => {
+    const contactForm = document.getElementById('contactForm')
+    contactForm.reset()
+    return false
+ }
+
+
+
  const postNewQuerry = () => {
      fetch(`${apiUrl}/admin/messages`, {
         method: 'POST',
@@ -37,11 +46,15 @@ const messageFormData = () => {
             const sentMessage = data.newMessage
             console.log(data.newMessage)
             alert('>>>   Message Sent Successfully.  Thank You For Reaching Out!   <<<')
+            clearForm()
      })
  }
+
+
 
 const sendQuerry = document.getElementById('sendQuerry')
 
 sendQuerry.addEventListener('click', () => {
     postNewQuerry()
 })
+

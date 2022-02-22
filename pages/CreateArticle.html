@@ -92,28 +92,28 @@
             <div class="article-container" >
                 
                 <form action="" method="POST" class="create__form" id="articleForm">
-                    <div class="grid">
+                    <div class="createArticleForm">
                         <div class="article__content">
-                            <label for="" class="article__label">Article Title</label>
-                            <input type="text" name="name" id="articleTitle" class="contact__input" placeholder="Article Title" >
+                            <input type="text" name="newArticleTitle" id="articleTitle" class="article__title-input" placeholder="Article Title" >
                         </div>
                         
                         <div class="article__content">
-                            <label for="" class="article__label">Article Content</label>
-                            <input type="text" name="name" id="articleContent" class="contact__input" placeholder="Article Content" >
+                            <textarea name="newArticleContent" id="articleContent" class="article__content-input" placeholder="Article Content" cols="1" rows="1"></textarea>
                         </div>
+
+                        <p class="article-action-btns">
+                            <a href="" class="article-action-btn" id="createArticleBut">Create Article</a>
+                        </p>
 
                     </div>
 
-                    <p class="article-action-btns">
-                        <button class="article-action-btn" onclick="createArticle()">Create Article</button>
-                    </p>
+                    
                 </form>
                 
             </div>
 
         </main>
     </div>
-    <script src="../public/assets/js/Admin.js"></script>
+    <script src="../public/assets/js/AdminBlog.js"></script>
 </body>
 </html>
