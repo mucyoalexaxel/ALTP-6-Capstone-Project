@@ -121,6 +121,7 @@ const clearArticleForm = () => {
         }).then(data => {
             document.cookie =  `accessToken=${accessToken};path=/; max-age=0; sameSite=Lax;`;
             // return window.location.href = '../../../ALTP-6-Capstone-Project/index.html#home'
-            return window.location.replace = './index.html#home'
+            return window.location.replace = './ALTP-6-Capstone-Project/index.html#home'
+            // return window.location.replace = 'index.html#home'
      })
 }
