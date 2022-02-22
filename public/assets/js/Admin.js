@@ -288,7 +288,7 @@ const adminDeleteArticle = (postId) => {
             console.log(`Error Happened...>> Status Code: ${res.status}`)
         }).then(data => {
             document.cookie =  `accessToken=${accessToken};path=/; max-age=0; sameSite=Lax;`;
-            // return window.location.href = '../../../ALTP-6-Capstone-Project/index.html#home'
-            return window.location.href = '../../../index.html#home'
+            return window.location.href = '../../../ALTP-6-Capstone-Project/index.html#home'
+            // return window.location.href = '../../../index.html#home'
      })
 }

@@ -2,9 +2,20 @@
  * This JS File Will Handle All Blog Articles 
  */
 
- const apiUrl = 'https://alexaxel-resume.herokuapp.com'
+/**
+ * Pre Loader
+ */
+
+window.addEventListener('load', () => {
+    fetchArticles()
+});
 
 
+const apiUrl = 'https://alexaxel-resume.herokuapp.com'
+const spinnerWrapperBlog = document.querySelector('.spinner-wrapper-blog');
+const delayBlogLoader = () => {
+    spinnerWrapperBlog.style.display = 'none';
+}
 /**
 * Fetching The Articles From The API
 */
@@ -16,10 +27,9 @@ const fetchArticles = () => {
 
         if (res.ok === true ) return res.json()
         console.log(`Error Happened...>> Status Code: ${res.status}`) 
-        
     }).then(fetchedData => {
         console.log(fetchedData)
-        // document.querySelector('.portfolio__title').innerHTML = fetchedData[0].title
+        setTimeout(delayBlogLoader, 100)
     
         // Storing & Outputing Blog Articles Data
         let article=""
@@ -47,9 +57,15 @@ const fetchArticles = () => {
         console.error(err)
     })
 }
-fetchArticles()
+
 
 const ArticleView = (ArticleId) => {
     alert(ArticleId)
     console.log(ArticleId)
 }
+
+
+
+
+
+

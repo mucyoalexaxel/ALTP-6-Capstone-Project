@@ -2,7 +2,22 @@
  * This JS File Will Handle All Blog Articles 
  */
 
- const apiUrl = 'https://alexaxel-resume.herokuapp.com'
+const apiUrl = 'https://alexaxel-resume.herokuapp.com'
+/**
+ * Pre Loader
+ */
+const SpinnerWrapper = document.querySelector('.spinner-wrapper');
+const delayLoader = () =>  {
+    SpinnerWrapper.style.display = 'none';
+}
+
+const LoginLoader = () =>  {
+    SpinnerWrapper.style.display = 'flex';
+}
+ window.addEventListener('load', () => {     
+    setTimeout(delayLoader, 150)
+});
+
  
 //  let accessToken = ('; '+document.cookie).split(`; accessToken=`).pop().split(';')[0];
 let accessToken, refreshToken;
@@ -45,7 +60,7 @@ const regFormData = () => {
             accessToken = data.accessToken
             refreshToken = data.refreshToken
             document.cookie =  `accessToken=${accessToken}; path=/; expires=1000*60*60*3; sameSite=Lax;`;
-            return window.location.href = './adminDash.html'
+            return window.location.href = './login.html'
      })
  }
 
@@ -73,6 +88,7 @@ const loginUser = () => {
             const accessToken = data.accessToken
             const refreshToken = data.refreshToken
             document.cookie =  `accessToken=${accessToken};path=/; max-age=${1000*60*60*3}; sameSite=Lax;`;
+            LoginLoader()
             return window.location.href = './adminDash.html'
     })
 }

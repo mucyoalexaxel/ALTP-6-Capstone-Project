@@ -1,6 +1,16 @@
+
 /**
- * This JS File Will Handle All Message Queriies 
+ * Pre Loader
  */
+ const SpinnerWrapper = document.querySelector('.spinner-wrapper');
+ const delayLoader = () =>  {
+    SpinnerWrapper.style.display = 'none';
+}
+ window.addEventListener('load', () => {     
+    setTimeout(delayLoader, 150)
+ });
+
+
 
 /**
  * Storing Form Data
