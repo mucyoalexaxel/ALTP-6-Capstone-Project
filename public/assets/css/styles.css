@@ -186,7 +186,6 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-top: 1px solid var(--first-color); */
 }
 
 .nav__logo, .nav__toggle{
@@ -219,7 +218,6 @@ img{
         box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
         border-radius: 1.5rem  1.5rem 0 0;
         transition: .4s ease;
-        /* border-top: 1px solid var(--first-color-second); */
     }
 }
 
@@ -1057,6 +1055,10 @@ img{
         margin: 0;
     }
 
+    .home__container{
+        height: 100%;
+    }
+
     .section{
         padding: 6rem 0 2rem;
     }
@@ -1086,10 +1088,13 @@ img{
     .nav__list{
         display: flex;
         column-gap: 2rem;
+        align-items: center;
+        height: 100%;
     }
 
     .nav__menu{
-        margin-left: auto;
+        margin: auto;    
+        height: 100%;    
     }
 
     .change-theme{
